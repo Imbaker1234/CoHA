@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0-preview.6.20312.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="5.0.0-preview.6.20312.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.0-preview.6.20312.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CoHACore\CoHACore.csproj" />
+      <ProjectReference Include="..\CoHAExceptions\CoHAExceptions.csproj" />
+    </ItemGroup>
+
+</Project>

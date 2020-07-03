@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.0-preview.6.20312.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CoHACore\CoHACore.csproj" />
+      <ProjectReference Include="..\CoHAMVC\CoHAMVC.csproj" />
+      <ProjectReference Include="..\CoHAPersistence\CoHAPersistence.csproj" />
+    </ItemGroup>
+
+</Project>
