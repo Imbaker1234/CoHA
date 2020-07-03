@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoHAMVC", "CoHAMVC\CoHAMVC.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoHAExceptions", "CoHAExceptions\CoHAExceptions.csproj", "{7C676BA4-B386-40F2-8B14-8CAA2E9C2096}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiraThree", "Example-MiraApi\MiraThree.csproj", "{549D9F31-5704-45AF-9EA1-05D4E415C592}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mira-Api", "Example-MiraApi\Mira-Api.csproj", "{549D9F31-5704-45AF-9EA1-05D4E415C592}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

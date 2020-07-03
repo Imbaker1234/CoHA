@@ -103,7 +103,7 @@
                     sql.Append($"WHERE {parameter.Key} = '{parameter.Value}'");
                 }
             }
-            
+
             var product = await DbContext.Set<T>().FromSqlRaw(sql.ToString()).ToListAsync();
 
             return product;
