@@ -1,4 +1,4 @@
-﻿namespace MiraThree.Base
+﻿namespace CoHAApi
 {
     public interface IModel
     {

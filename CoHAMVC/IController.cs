@@ -1,4 +1,4 @@
-﻿namespace MiraThree
+﻿namespace CoHAMVC
 {
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;

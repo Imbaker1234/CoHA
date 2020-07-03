@@ -1,10 +1,12 @@
-﻿namespace MiraThree.Base
+﻿namespace CoHAPersistence
 {
     using System.Collections.Generic;
     using System.Text;
     using System.Threading.Tasks;
+    using CoHAApi;
     using CoHAExceptions;
     using Microsoft.EntityFrameworkCore;
+    using MiraThree;
 
     public class EntityRepository<T> : IRepository<T> where T : class, IModel
     {

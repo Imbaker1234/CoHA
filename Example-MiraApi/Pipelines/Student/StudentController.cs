@@ -3,6 +3,8 @@
 namespace MiraThree
 {
     using System.Threading.Tasks;
+    using CoHAApi;
+    using CoHAMVC;
     using Microsoft.AspNetCore.Http.Extensions;
 
     [Route("student")]

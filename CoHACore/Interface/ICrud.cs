@@ -1,4 +1,4 @@
-﻿namespace MiraThree
+﻿namespace CoHAApi
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;

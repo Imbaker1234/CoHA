@@ -1,4 +1,4 @@
-﻿namespace MiraThree
+﻿namespace CoHAMVC
 {
     using System.Collections.Generic;
     using System.Linq;

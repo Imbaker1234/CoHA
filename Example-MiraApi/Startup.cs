@@ -6,8 +6,9 @@ using Microsoft.Extensions.Hosting;
 
 namespace MiraThree
 {
-    using Base;
+    using CoHAApi;
     using CoHAMVC;
+    using CoHAPersistence;
     using Microsoft.EntityFrameworkCore;
 
     public class Startup

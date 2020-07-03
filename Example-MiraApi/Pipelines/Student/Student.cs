@@ -1,7 +1,7 @@
 ﻿namespace MiraThree
 {
     using System.ComponentModel.DataAnnotations;
-    using Base;
+    using CoHAApi;
 
     public class Student : IModel
     {
