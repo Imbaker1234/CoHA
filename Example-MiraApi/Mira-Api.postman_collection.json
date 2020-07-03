@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "cb12532a-45ca-4f1b-8cef-cbfaf7f8c724",
+		"name": "Mira-Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"id\": \"376d8956-5f3d-4123-8354-fdba70405234\",\r\n        \"first\": \"John\",\r\n         \"last\": \"Connor\",\r\n         \"address\": \"1921 Elm Grove Drive, End of the Road, MI, 21224\",\r\n         \"email\": \"JohnConnor@Terminator.gov\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/Student/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Student",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Student/376d8956-5f3d-4123-8354-fdba70405234",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Student",
+						"376d8956-5f3d-4123-8354-fdba70405234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"id\": \"0cbd2fd3-0028-4de6-ae0a-49ac984e7b72\",\r\n        \"first\": \"Wendy\",\r\n         \"last\": \"Rhodes\",\r\n         \"address\": \"1342 Riderwood Road, End of the Road, MI, 21224\",\r\n         \"email\": \"WendyRhodes@AxeCapital.net\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/Student/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Student",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Student/b501b19b-0bde-4fc2-995a-4251cfa4c83d",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Student",
+						"b501b19b-0bde-4fc2-995a-4251cfa4c83d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Student?first=Wendy",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Student"
+					],
+					"query": [
+						{
+							"key": "first",
+							"value": "Wendy"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
