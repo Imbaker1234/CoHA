@@ -6,7 +6,6 @@
     using CoHAApi;
     using CoHAExceptions;
     using Microsoft.EntityFrameworkCore;
-    using MiraThree;
 
     public class EntityRepository<T> : IRepository<T> where T : class, IModel
     {
@@ -17,7 +16,7 @@
             DbContext = dbContext;
         }
 
-        public async Task<T> Create(T item)
+        public virtual async Task<T> Create(T item)
         {
             //We create an empty container for our product
 
@@ -39,7 +38,7 @@
             return product;
         }
 
-        public async Task<T> Read(string id)
+        public virtual async Task<T> Read(string id)
         {
             //Declaring container for our finished product.
             T product;
@@ -55,7 +54,7 @@
             return product;
         }
 
-        public async Task<T> Update(T item)
+        public virtual async Task<T> Update(T item)
         {
             T product;
             await using (var transaction = await DbContext.Database.BeginTransactionAsync())
@@ -72,7 +71,7 @@
             return product;
         }
 
-        public async Task<T> Delete(string id)
+        public virtual async Task<T> Delete(string id)
         {
             T product;
             using (var transaction = await DbContext.Database.BeginTransactionAsync())
@@ -93,7 +92,7 @@
             return product;
         }
 
-        public async Task<List<T>> ReadAll(Dictionary<string, string> parameters)
+        public virtual async Task<List<T>> ReadAll(Dictionary<string, string> parameters)
         {
             var model = $"{typeof(T).Name}s";
             var sql = new StringBuilder($"SELECT * FROM {model} ");

@@ -2,13 +2,15 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoHAPersistence", "CoHAPersistence\CoHAPersistence.csproj", "{5A5F0CE0-8221-482A-90EA-950B03B801A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoHACore", "CoHACore\CoHACore.csproj", "{C8E72642-F6D9-4780-A88B-DF0E3D792A0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoHAModels", "CoHAModels\CoHAModels.csproj", "{C8E72642-F6D9-4780-A88B-DF0E3D792A0C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoHAMVC", "CoHAMVC\CoHAMVC.csproj", "{06912002-71C2-4468-83F0-CBFA485DD538}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoHAExceptions", "CoHAExceptions\CoHAExceptions.csproj", "{7C676BA4-B386-40F2-8B14-8CAA2E9C2096}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mira-Api", "Example-MiraApi\Mira-Api.csproj", "{549D9F31-5704-45AF-9EA1-05D4E415C592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoHAServices", "CoHAServices\CoHAServices.csproj", "{12E27A76-90F7-4709-9184-468964BF0900}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +38,9 @@ Global
 		{549D9F31-5704-45AF-9EA1-05D4E415C592}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{549D9F31-5704-45AF-9EA1-05D4E415C592}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{549D9F31-5704-45AF-9EA1-05D4E415C592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E27A76-90F7-4709-9184-468964BF0900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E27A76-90F7-4709-9184-468964BF0900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E27A76-90F7-4709-9184-468964BF0900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E27A76-90F7-4709-9184-468964BF0900}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

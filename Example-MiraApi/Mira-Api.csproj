@@ -10,9 +10,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\CoHACore\CoHACore.csproj" />
+      <ProjectReference Include="..\CoHAModels\CoHAModels.csproj" />
       <ProjectReference Include="..\CoHAMVC\CoHAMVC.csproj" />
       <ProjectReference Include="..\CoHAPersistence\CoHAPersistence.csproj" />
+      <ProjectReference Include="..\CoHAServices\CoHAServices.csproj" />
     </ItemGroup>
 
 </Project>
