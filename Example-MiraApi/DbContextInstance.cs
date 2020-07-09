@@ -2,15 +2,18 @@
 {
     using System.Reflection;
     using Microsoft.EntityFrameworkCore;
+    using Rooms;
 
     public class DbContextInstance : DbContext
     {
         public DbSet<Student> Students { get; set; } 
+        public DbSet<Room> Rooms { get; set; } 
         private string _db { get; set; }
 
-        protected DbContextInstance(DbSet<Student> students, string db)
+        protected DbContextInstance(DbSet<Student> students, DbSet<Room> rooms, string db)
         {
             Students = students;
+            Rooms = rooms;
             _db = db;
         }
 
@@ -33,6 +36,13 @@
             // Map table names
             modelBuilder.Entity<Student>().ToTable("Students");
             modelBuilder.Entity<Student>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+            });
+            base.OnModelCreating(modelBuilder);
+            
+            modelBuilder.Entity<Room>().ToTable("Rooms");
+            modelBuilder.Entity<Room>(entity =>
             {
                 entity.HasKey(e => e.Id);
             });

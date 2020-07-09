@@ -10,6 +10,7 @@ namespace MiraThree
     using CoHAMVC;
     using CoHAPersistence;
     using Microsoft.EntityFrameworkCore;
+    using Rooms;
 
     public class Startup
     {
@@ -20,6 +21,8 @@ namespace MiraThree
             services.AddControllers(opts => opts.Filters.Add<IoFilter>());
             services.AddTransient<IService<Student>, StudentService>();
             services.AddTransient<IRepository<Student>, EntityRepository<Student>>();
+            services.AddTransient<IRepository<Room>, EntityRepository<Room>>();
+            services.AddTransient<IService<Room>, CoHAService<Room>>();
             services.AddSingleton<DbContext>(sp => new DbContextInstance(@"C:\Databases\MiraDb3.db"));
         }
 
